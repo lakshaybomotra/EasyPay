@@ -8,10 +8,10 @@ const Tab = createBottomTabNavigator();
 export default function BottomTabs() {
     return (
         <Tab.Navigator
-
             screenOptions={{
                 tabBarActiveTintColor: 'tomato',
                 tabBarInactiveTintColor: 'green',
+                headerShown: false
             }}
         >
             <Tab.Screen name='Home' component={Home}
@@ -24,7 +24,7 @@ export default function BottomTabs() {
             <Tab.Screen name='Transactions' component={Transactions}
                 options={{
                     tabBarIcon: () => (
-                        <Icon name='gear' size={20} />
+                        <Icon name='list' size={20} />
                     )
                 }}
             />

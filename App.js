@@ -7,7 +7,7 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import BottomTabs from './src/BottomTabs';
 
-function App(): JSX.Element {
+function App() {
 
   return (
     <NavigationContainer>
