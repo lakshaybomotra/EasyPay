@@ -19,10 +19,10 @@ const TransctionListItem = ({ item }) => {
       </View>
       {/* Arrow Icon */}
       <TouchableOpacity style={styles.amtView}>
-      <Text style={[styles.amt,{color: item.type === 'income' ? 'green' : 'red'}]}>
-        {
-          item.type === 'income' ? '$' + item.amt :  '-$' + item.amt
-        }
+        <Text style={[styles.amt, { color: item.type === 'income' ? 'green' : 'red' }]}>
+          {
+            item.type === 'income' ? '$' + item.amt : '-$' + item.amt
+          }
         </Text>
         <Antdesign name="right" size={20} color="black" />
       </TouchableOpacity>
@@ -33,7 +33,6 @@ const TransctionListItem = ({ item }) => {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: '#fff',
-    // marginHorizontal: 10,
     padding: 15,
     // elevation: 4, // for Android
     flexDirection: 'row',
@@ -44,7 +43,6 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 15,
-    // marginBottom: 10,
   },
   name: {
     fontSize: 20,
@@ -57,13 +55,12 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   amtView: {
-    // alignItems: 'flex-end',
     flexDirection: 'row',
     gap: 12,
     alignItems: 'center'
   },
-  amt:{
-    fontSize:15,
+  amt: {
+    fontSize: 15,
   }
 });
 
