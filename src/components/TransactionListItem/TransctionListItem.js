@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: '#fff',
     padding: 15,
-    // elevation: 4, // for Android
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center'
