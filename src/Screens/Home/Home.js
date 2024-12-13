@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text style={{ fontSize: 18, marginBottom: 20 }}>
-        Selected Date:  {date.toDateString()}
+        Selected Date: {date.toDateString().toLocaleString()}
       </Text>
 
       <Button onPress={showDatePicker} title="Select Date" /> 
