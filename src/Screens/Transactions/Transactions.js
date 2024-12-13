@@ -4,7 +4,6 @@ import TransctionListItem from '../../components/TransactionListItem/TransctionL
 import transaction from '../../data/transactionData/transactionData';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import DateTimePicker from '@react-native-community/datetimepicker';
 
 const Transactions = () => {
     const [sortOrder, setSortOrder] = useState('asc');
@@ -28,8 +27,7 @@ const Transactions = () => {
         <SafeAreaView style={styles.container}>
             <StatusBar
                 barStyle="dark-content"
-                backgroundColor="#6200EE"
-                translucent={true}
+                backgroundColor="#fff"
             />
 
             {/* Header Section */}
@@ -37,9 +35,7 @@ const Transactions = () => {
                 <TouchableOpacity style={styles.iconButton}>
                     <Feather name="chevron-left" size={24} color="black" />
                 </TouchableOpacity>
-
                 <Text style={styles.headerText}>Transactions</Text>
-
                 <TouchableOpacity style={styles.iconButton}>
                     <Feather name="bell" size={24} color="black" />
                 </TouchableOpacity>
@@ -47,7 +43,6 @@ const Transactions = () => {
 
             {/* Sort Dropdown */}
             <View style={styles.sortContainer}>
-
                 <TouchableOpacity onPress={toggleDropdown} style={styles.sortButton}>
                     <Text
                         style={{
