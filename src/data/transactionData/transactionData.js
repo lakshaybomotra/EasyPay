@@ -21,7 +21,7 @@ const transaction = [
         name: 'Priyank Doe',
         time: '01th Feb, 1:20 am',
         amt: '1300',
-        type: 'income'
+        type: 'expense'
     },
     {
         id: '4',
@@ -29,7 +29,7 @@ const transaction = [
         name: 'Lassy Doe',
         time: '01th Feb, 1:20 am',
         amt: '1300',
-        type: 'expense'
+        type: 'income'
 
     },
 ];

@@ -6,13 +6,16 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 import BottomTabs from './src/BottomTabs';
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 function App() {
 
   return (
-    <NavigationContainer>
-       <BottomTabs />
-    </NavigationContainer>
+    <GestureHandlerRootView>
+      <NavigationContainer>
+        <BottomTabs />
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 }
 
